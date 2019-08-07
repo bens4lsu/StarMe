@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B51FA47622F74043001D9D04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51FA47522F74043001D9D04 /* AppDelegate.swift */; };
+		B51FA47822F74043001D9D04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51FA47722F74043001D9D04 /* ViewController.swift */; };
+		B51FA47B22F74043001D9D04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51FA47922F74043001D9D04 /* Main.storyboard */; };
+		B51FA47D22F74044001D9D04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51FA47C22F74044001D9D04 /* Assets.xcassets */; };
+		B51FA48022F74044001D9D04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51FA47E22F74044001D9D04 /* LaunchScreen.storyboard */; };
+		B51FA48B22F74044001D9D04 /* StarMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51FA48A22F74044001D9D04 /* StarMeTests.swift */; };
+		B51FA49622F74044001D9D04 /* StarMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51FA49522F74044001D9D04 /* StarMeUITests.swift */; };
+		B51FA4A422F7409A001D9D04 /* CosmosDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51FA4A322F7409A001D9D04 /* CosmosDistrib.swift */; };
+		B5A37E9222F8CD4200AFAB2F /* CiderUrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37E8E22F8CD4200AFAB2F /* CiderUrlBuilder.swift */; };
+		B5A37E9322F8CD4200AFAB2F /* Include.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37E8F22F8CD4200AFAB2F /* Include.swift */; };
+		B5A37E9422F8CD4200AFAB2F /* UrlFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37E9022F8CD4200AFAB2F /* UrlFetcher.swift */; };
+		B5A37E9522F8CD4200AFAB2F /* CiderClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37E9122F8CD4200AFAB2F /* CiderClient.swift */; };
+		B5A37E9C22F8CD5600AFAB2F /* AppleMusicAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37E9722F8CD5600AFAB2F /* AppleMusicAPIError.swift */; };
+		B5A37E9D22F8CD5600AFAB2F /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37E9822F8CD5600AFAB2F /* SearchResults.swift */; };
+		B5A37E9E22F8CD5600AFAB2F /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37E9922F8CD5600AFAB2F /* Resource.swift */; };
+		B5A37E9F22F8CD5600AFAB2F /* Relationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37E9A22F8CD5600AFAB2F /* Relationship.swift */; };
+		B5A37EA022F8CD5600AFAB2F /* ResponseRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37E9B22F8CD5600AFAB2F /* ResponseRoot.swift */; };
+		B5A37EAF22F8CE0300AFAB2F /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37EA222F8CE0300AFAB2F /* Track.swift */; };
+		B5A37EB022F8CE0300AFAB2F /* MusicVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37EA322F8CE0300AFAB2F /* MusicVideo.swift */; };
+		B5A37EB122F8CE0300AFAB2F /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37EA422F8CE0300AFAB2F /* Genre.swift */; };
+		B5A37EB222F8CE0300AFAB2F /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37EA522F8CE0300AFAB2F /* Album.swift */; };
+		B5A37EB322F8CE0300AFAB2F /* PlayParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37EA622F8CE0300AFAB2F /* PlayParameters.swift */; };
+		B5A37EB422F8CE0300AFAB2F /* Storefront.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37EA722F8CE0300AFAB2F /* Storefront.swift */; };
+		B5A37EB522F8CE0300AFAB2F /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37EA822F8CE0300AFAB2F /* MediaType.swift */; };
+		B5A37EB622F8CE0300AFAB2F /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37EA922F8CE0300AFAB2F /* Artist.swift */; };
+		B5A37EB722F8CE0300AFAB2F /* ContentRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37EAA22F8CE0300AFAB2F /* ContentRating.swift */; };
+		B5A37EB822F8CE0300AFAB2F /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37EAB22F8CE0300AFAB2F /* Playlist.swift */; };
+		B5A37EB922F8CE0300AFAB2F /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37EAC22F8CE0300AFAB2F /* Artwork.swift */; };
+		B5A37EBA22F8CE0300AFAB2F /* EditorialNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37EAD22F8CE0300AFAB2F /* EditorialNotes.swift */; };
+		B5A37EBB22F8CE0300AFAB2F /* Curator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37EAE22F8CE0300AFAB2F /* Curator.swift */; };
+		B5D008F322F883C90023D3D9 /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D008F222F883C90023D3D9 /* TimeInterval.swift */; };
+		B5D008F822F895D70023D3D9 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D008F722F895D70023D3D9 /* UIImage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B51FA48722F74044001D9D04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B51FA46A22F74043001D9D04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B51FA47122F74043001D9D04;
+			remoteInfo = StarMe;
+		};
+		B51FA49222F74044001D9D04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B51FA46A22F74043001D9D04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B51FA47122F74043001D9D04;
+			remoteInfo = StarMe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B51FA47222F74043001D9D04 /* StarMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B51FA47522F74043001D9D04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B51FA47722F74043001D9D04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B51FA47A22F74043001D9D04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B51FA47C22F74044001D9D04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B51FA47F22F74044001D9D04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B51FA48122F74044001D9D04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B51FA48622F74044001D9D04 /* StarMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B51FA48A22F74044001D9D04 /* StarMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarMeTests.swift; sourceTree = "<group>"; };
+		B51FA48C22F74044001D9D04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B51FA49122F74044001D9D04 /* StarMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B51FA49522F74044001D9D04 /* StarMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarMeUITests.swift; sourceTree = "<group>"; };
+		B51FA49722F74044001D9D04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B51FA4A322F7409A001D9D04 /* CosmosDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CosmosDistrib.swift; sourceTree = "<group>"; };
+		B5A37E8E22F8CD4200AFAB2F /* CiderUrlBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CiderUrlBuilder.swift; sourceTree = "<group>"; };
+		B5A37E8F22F8CD4200AFAB2F /* Include.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Include.swift; sourceTree = "<group>"; };
+		B5A37E9022F8CD4200AFAB2F /* UrlFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlFetcher.swift; sourceTree = "<group>"; };
+		B5A37E9122F8CD4200AFAB2F /* CiderClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CiderClient.swift; sourceTree = "<group>"; };
+		B5A37E9722F8CD5600AFAB2F /* AppleMusicAPIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleMusicAPIError.swift; sourceTree = "<group>"; };
+		B5A37E9822F8CD5600AFAB2F /* SearchResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
+		B5A37E9922F8CD5600AFAB2F /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		B5A37E9A22F8CD5600AFAB2F /* Relationship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Relationship.swift; sourceTree = "<group>"; };
+		B5A37E9B22F8CD5600AFAB2F /* ResponseRoot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseRoot.swift; sourceTree = "<group>"; };
+		B5A37EA222F8CE0300AFAB2F /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		B5A37EA322F8CE0300AFAB2F /* MusicVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideo.swift; sourceTree = "<group>"; };
+		B5A37EA422F8CE0300AFAB2F /* Genre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		B5A37EA522F8CE0300AFAB2F /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		B5A37EA622F8CE0300AFAB2F /* PlayParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayParameters.swift; sourceTree = "<group>"; };
+		B5A37EA722F8CE0300AFAB2F /* Storefront.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storefront.swift; sourceTree = "<group>"; };
+		B5A37EA822F8CE0300AFAB2F /* MediaType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
+		B5A37EA922F8CE0300AFAB2F /* Artist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		B5A37EAA22F8CE0300AFAB2F /* ContentRating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentRating.swift; sourceTree = "<group>"; };
+		B5A37EAB22F8CE0300AFAB2F /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		B5A37EAC22F8CE0300AFAB2F /* Artwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
+		B5A37EAD22F8CE0300AFAB2F /* EditorialNotes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorialNotes.swift; sourceTree = "<group>"; };
+		B5A37EAE22F8CE0300AFAB2F /* Curator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curator.swift; sourceTree = "<group>"; };
+		B5D008F222F883C90023D3D9 /* TimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
+		B5D008F722F895D70023D3D9 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B51FA46F22F74043001D9D04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B51FA48322F74044001D9D04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B51FA48E22F74044001D9D04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B51FA46922F74043001D9D04 = {
+			isa = PBXGroup;
+			children = (
+				B51FA47422F74043001D9D04 /* StarMe */,
+				B51FA48922F74044001D9D04 /* StarMeTests */,
+				B51FA49422F74044001D9D04 /* StarMeUITests */,
+				B51FA47322F74043001D9D04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B51FA47322F74043001D9D04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B51FA47222F74043001D9D04 /* StarMe.app */,
+				B51FA48622F74044001D9D04 /* StarMeTests.xctest */,
+				B51FA49122F74044001D9D04 /* StarMeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B51FA47422F74043001D9D04 /* StarMe */ = {
+			isa = PBXGroup;
+			children = (
+				B5A37E8422F8CD0B00AFAB2F /* Cider */,
+				B5D008F622F88EFF0023D3D9 /* Extensions */,
+				B51FA47522F74043001D9D04 /* AppDelegate.swift */,
+				B51FA47722F74043001D9D04 /* ViewController.swift */,
+				B51FA47922F74043001D9D04 /* Main.storyboard */,
+				B51FA47C22F74044001D9D04 /* Assets.xcassets */,
+				B51FA4A322F7409A001D9D04 /* CosmosDistrib.swift */,
+				B51FA47E22F74044001D9D04 /* LaunchScreen.storyboard */,
+				B51FA48122F74044001D9D04 /* Info.plist */,
+			);
+			path = StarMe;
+			sourceTree = "<group>";
+		};
+		B51FA48922F74044001D9D04 /* StarMeTests */ = {
+			isa = PBXGroup;
+			children = (
+				B51FA48A22F74044001D9D04 /* StarMeTests.swift */,
+				B51FA48C22F74044001D9D04 /* Info.plist */,
+			);
+			path = StarMeTests;
+			sourceTree = "<group>";
+		};
+		B51FA49422F74044001D9D04 /* StarMeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B51FA49522F74044001D9D04 /* StarMeUITests.swift */,
+				B51FA49722F74044001D9D04 /* Info.plist */,
+			);
+			path = StarMeUITests;
+			sourceTree = "<group>";
+		};
+		B5A37E8422F8CD0B00AFAB2F /* Cider */ = {
+			isa = PBXGroup;
+			children = (
+				B5A37EA122F8CE0300AFAB2F /* ResourceObjects */,
+				B5A37E9622F8CD5600AFAB2F /* CoreObjects */,
+				B5A37E8D22F8CD4200AFAB2F /* Client */,
+			);
+			path = Cider;
+			sourceTree = "<group>";
+		};
+		B5A37E8D22F8CD4200AFAB2F /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				B5A37E8E22F8CD4200AFAB2F /* CiderUrlBuilder.swift */,
+				B5A37E8F22F8CD4200AFAB2F /* Include.swift */,
+				B5A37E9022F8CD4200AFAB2F /* UrlFetcher.swift */,
+				B5A37E9122F8CD4200AFAB2F /* CiderClient.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		B5A37E9622F8CD5600AFAB2F /* CoreObjects */ = {
+			isa = PBXGroup;
+			children = (
+				B5A37E9722F8CD5600AFAB2F /* AppleMusicAPIError.swift */,
+				B5A37E9822F8CD5600AFAB2F /* SearchResults.swift */,
+				B5A37E9922F8CD5600AFAB2F /* Resource.swift */,
+				B5A37E9A22F8CD5600AFAB2F /* Relationship.swift */,
+				B5A37E9B22F8CD5600AFAB2F /* ResponseRoot.swift */,
+			);
+			path = CoreObjects;
+			sourceTree = "<group>";
+		};
+		B5A37EA122F8CE0300AFAB2F /* ResourceObjects */ = {
+			isa = PBXGroup;
+			children = (
+				B5A37EA222F8CE0300AFAB2F /* Track.swift */,
+				B5A37EA322F8CE0300AFAB2F /* MusicVideo.swift */,
+				B5A37EA422F8CE0300AFAB2F /* Genre.swift */,
+				B5A37EA522F8CE0300AFAB2F /* Album.swift */,
+				B5A37EA622F8CE0300AFAB2F /* PlayParameters.swift */,
+				B5A37EA722F8CE0300AFAB2F /* Storefront.swift */,
+				B5A37EA822F8CE0300AFAB2F /* MediaType.swift */,
+				B5A37EA922F8CE0300AFAB2F /* Artist.swift */,
+				B5A37EAA22F8CE0300AFAB2F /* ContentRating.swift */,
+				B5A37EAB22F8CE0300AFAB2F /* Playlist.swift */,
+				B5A37EAC22F8CE0300AFAB2F /* Artwork.swift */,
+				B5A37EAD22F8CE0300AFAB2F /* EditorialNotes.swift */,
+				B5A37EAE22F8CE0300AFAB2F /* Curator.swift */,
+			);
+			path = ResourceObjects;
+			sourceTree = "<group>";
+		};
+		B5D008F622F88EFF0023D3D9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B5D008F722F895D70023D3D9 /* UIImage.swift */,
+				B5D008F222F883C90023D3D9 /* TimeInterval.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B51FA47122F74043001D9D04 /* StarMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B51FA49A22F74044001D9D04 /* Build configuration list for PBXNativeTarget "StarMe" */;
+			buildPhases = (
+				B51FA46E22F74043001D9D04 /* Sources */,
+				B51FA46F22F74043001D9D04 /* Frameworks */,
+				B51FA47022F74043001D9D04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarMe;
+			productName = StarMe;
+			productReference = B51FA47222F74043001D9D04 /* StarMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B51FA48522F74044001D9D04 /* StarMeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B51FA49D22F74044001D9D04 /* Build configuration list for PBXNativeTarget "StarMeTests" */;
+			buildPhases = (
+				B51FA48222F74044001D9D04 /* Sources */,
+				B51FA48322F74044001D9D04 /* Frameworks */,
+				B51FA48422F74044001D9D04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B51FA48822F74044001D9D04 /* PBXTargetDependency */,
+			);
+			name = StarMeTests;
+			productName = StarMeTests;
+			productReference = B51FA48622F74044001D9D04 /* StarMeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B51FA49022F74044001D9D04 /* StarMeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B51FA4A022F74044001D9D04 /* Build configuration list for PBXNativeTarget "StarMeUITests" */;
+			buildPhases = (
+				B51FA48D22F74044001D9D04 /* Sources */,
+				B51FA48E22F74044001D9D04 /* Frameworks */,
+				B51FA48F22F74044001D9D04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B51FA49322F74044001D9D04 /* PBXTargetDependency */,
+			);
+			name = StarMeUITests;
+			productName = StarMeUITests;
+			productReference = B51FA49122F74044001D9D04 /* StarMeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B51FA46A22F74043001D9D04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = com.concordbusinessservicesllc;
+				TargetAttributes = {
+					B51FA47122F74043001D9D04 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					B51FA48522F74044001D9D04 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = B51FA47122F74043001D9D04;
+					};
+					B51FA49022F74044001D9D04 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = B51FA47122F74043001D9D04;
+					};
+				};
+			};
+			buildConfigurationList = B51FA46D22F74043001D9D04 /* Build configuration list for PBXProject "StarMe" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B51FA46922F74043001D9D04;
+			productRefGroup = B51FA47322F74043001D9D04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B51FA47122F74043001D9D04 /* StarMe */,
+				B51FA48522F74044001D9D04 /* StarMeTests */,
+				B51FA49022F74044001D9D04 /* StarMeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B51FA47022F74043001D9D04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B51FA48022F74044001D9D04 /* LaunchScreen.storyboard in Resources */,
+				B51FA47D22F74044001D9D04 /* Assets.xcassets in Resources */,
+				B51FA47B22F74043001D9D04 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B51FA48422F74044001D9D04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B51FA48F22F74044001D9D04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B51FA46E22F74043001D9D04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A37E9D22F8CD5600AFAB2F /* SearchResults.swift in Sources */,
+				B51FA47822F74043001D9D04 /* ViewController.swift in Sources */,
+				B5A37E9422F8CD4200AFAB2F /* UrlFetcher.swift in Sources */,
+				B5A37EB322F8CE0300AFAB2F /* PlayParameters.swift in Sources */,
+				B5A37EB022F8CE0300AFAB2F /* MusicVideo.swift in Sources */,
+				B5A37E9C22F8CD5600AFAB2F /* AppleMusicAPIError.swift in Sources */,
+				B5A37EB522F8CE0300AFAB2F /* MediaType.swift in Sources */,
+				B5A37EB222F8CE0300AFAB2F /* Album.swift in Sources */,
+				B5A37EA022F8CD5600AFAB2F /* ResponseRoot.swift in Sources */,
+				B5D008F322F883C90023D3D9 /* TimeInterval.swift in Sources */,
+				B5A37EB622F8CE0300AFAB2F /* Artist.swift in Sources */,
+				B5A37EB822F8CE0300AFAB2F /* Playlist.swift in Sources */,
+				B5D008F822F895D70023D3D9 /* UIImage.swift in Sources */,
+				B51FA47622F74043001D9D04 /* AppDelegate.swift in Sources */,
+				B51FA4A422F7409A001D9D04 /* CosmosDistrib.swift in Sources */,
+				B5A37EB922F8CE0300AFAB2F /* Artwork.swift in Sources */,
+				B5A37EB122F8CE0300AFAB2F /* Genre.swift in Sources */,
+				B5A37EBA22F8CE0300AFAB2F /* EditorialNotes.swift in Sources */,
+				B5A37EB722F8CE0300AFAB2F /* ContentRating.swift in Sources */,
+				B5A37EBB22F8CE0300AFAB2F /* Curator.swift in Sources */,
+				B5A37E9222F8CD4200AFAB2F /* CiderUrlBuilder.swift in Sources */,
+				B5A37E9F22F8CD5600AFAB2F /* Relationship.swift in Sources */,
+				B5A37EAF22F8CE0300AFAB2F /* Track.swift in Sources */,
+				B5A37E9E22F8CD5600AFAB2F /* Resource.swift in Sources */,
+				B5A37EB422F8CE0300AFAB2F /* Storefront.swift in Sources */,
+				B5A37E9322F8CD4200AFAB2F /* Include.swift in Sources */,
+				B5A37E9522F8CD4200AFAB2F /* CiderClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B51FA48222F74044001D9D04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B51FA48B22F74044001D9D04 /* StarMeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B51FA48D22F74044001D9D04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B51FA49622F74044001D9D04 /* StarMeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B51FA48822F74044001D9D04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B51FA47122F74043001D9D04 /* StarMe */;
+			targetProxy = B51FA48722F74044001D9D04 /* PBXContainerItemProxy */;
+		};
+		B51FA49322F74044001D9D04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B51FA47122F74043001D9D04 /* StarMe */;
+			targetProxy = B51FA49222F74044001D9D04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B51FA47922F74043001D9D04 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B51FA47A22F74043001D9D04 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B51FA47E22F74044001D9D04 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B51FA47F22F74044001D9D04 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B51FA49822F74044001D9D04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B51FA49922F74044001D9D04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B51FA49B22F74044001D9D04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4YE7E9G4GE;
+				INFOPLIST_FILE = StarMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.concordbusinessservicesllc.StarMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B51FA49C22F74044001D9D04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4YE7E9G4GE;
+				INFOPLIST_FILE = StarMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.concordbusinessservicesllc.StarMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B51FA49E22F74044001D9D04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZMFPVLKG3;
+				INFOPLIST_FILE = StarMeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.concordbusinessservicesllc.StarMeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarMe.app/StarMe";
+			};
+			name = Debug;
+		};
+		B51FA49F22F74044001D9D04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZMFPVLKG3;
+				INFOPLIST_FILE = StarMeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.concordbusinessservicesllc.StarMeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarMe.app/StarMe";
+			};
+			name = Release;
+		};
+		B51FA4A122F74044001D9D04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZMFPVLKG3;
+				INFOPLIST_FILE = StarMeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.concordbusinessservicesllc.StarMeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StarMe;
+			};
+			name = Debug;
+		};
+		B51FA4A222F74044001D9D04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZMFPVLKG3;
+				INFOPLIST_FILE = StarMeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.concordbusinessservicesllc.StarMeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StarMe;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B51FA46D22F74043001D9D04 /* Build configuration list for PBXProject "StarMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B51FA49822F74044001D9D04 /* Debug */,
+				B51FA49922F74044001D9D04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B51FA49A22F74044001D9D04 /* Build configuration list for PBXNativeTarget "StarMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B51FA49B22F74044001D9D04 /* Debug */,
+				B51FA49C22F74044001D9D04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B51FA49D22F74044001D9D04 /* Build configuration list for PBXNativeTarget "StarMeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B51FA49E22F74044001D9D04 /* Debug */,
+				B51FA49F22F74044001D9D04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B51FA4A022F74044001D9D04 /* Build configuration list for PBXNativeTarget "StarMeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B51FA4A122F74044001D9D04 /* Debug */,
+				B51FA4A222F74044001D9D04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B51FA46A22F74043001D9D04 /* Project object */;
+}
