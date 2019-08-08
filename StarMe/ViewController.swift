@@ -24,17 +24,23 @@ class ViewController: UIViewController {
     @IBOutlet var nextButton: UIButton!
     @IBOutlet var cosmosView: CosmosView!
     
-    let cider : CiderClient = {
+    /*let cider : CiderClient = {
         let developerToken = "MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQgCkPUIy9dIT/L+U1g3Mpc+Mru6VhfyoHUUYuoYyz/i0igCgYIKoZIzj0DAQehRANCAASECa/zp6CPCSKmkoJgBtKHSA8SsDCNjSHQDS38uIbb6QkqlcnxnMH8PUsQaweWsWFW7U/+l0doC4sWbXVUpexj"
         return CiderClient(storefront: .unitedStates, developerToken: developerToken)
-    }()
+    }()*/
     
     let player = MPMusicPlayerController.systemMusicPlayer
     let playImage = UIImage(named: "icons8-play-100")?.resize(toWidth: 35)
     let pauseImage = UIImage(named: "icons8-pause-100")?.resize(toWidth: 35)
     let prevImage = UIImage(named: "icons8-skip-to-start-100")?.resize(toWidth: 35)
     let nextImage = UIImage(named: "icons8-end-100")?.resize(toWidth: 35)
+    
     var timer = Timer()
+    // MARK: Properties for auto scrolling song, artist, and album labels
+    var autoScrollArtist = false
+    var autoScrollAlbum = false
+    var autoScrollSong = false
+    var scrollInterval: Double = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,6 +90,7 @@ class ViewController: UIViewController {
     @objc func timerFired(){
         elapsed.text = player.currentPlaybackTime.durationText
         slider.value = Float(player.currentPlaybackTime)
+
     }
     
     
@@ -98,6 +105,9 @@ class ViewController: UIViewController {
             slider.maximumValue = 60
             slider.value = 0
             cosmosView.rating = 0
+            artist.sizeToFit()
+            album.sizeToFit()
+            song.sizeToFit()
             return
         }
         artist.text = nowPlayingItem.artist
@@ -109,10 +119,27 @@ class ViewController: UIViewController {
         slider.maximumValue = Float(nowPlayingItem.playbackDuration)
         slider.value = 0.0
         cosmosView.rating = Double(nowPlayingItem.rating)
+        artist.sizeToFit()
+        album.sizeToFit()
+        song.sizeToFit()
         
-        cider.search(term: "Michael Jackson", types: [.albums, .songs]) { results, error in
-            print("&&&&&&& \(String(describing: results))  \(String(describing: error))")
-        }
+        //cider.search(term: "Michael Jackson", types: [.albums, .songs]) { results, error in
+        //    print("&&&&&&& \(String(describing: results))  \(String(describing: error))")
+        //}
+        
+        guard let artistScrollView = artist.superview as? UIScrollView,
+            let albumScrollView = album.superview as? UIScrollView,
+            let songScrollView = song.superview as? UIScrollView,
+            let duration = player.nowPlayingItem?.playbackDuration else { return }
+        
+        let artistDelta = Double(artist.bounds.width)// - artistScrollView.bounds.width)
+        let albumDelta = Double(album.bounds.width)// - albumScrollView.bounds.width)
+        let songDelta = Double(song.bounds.width)// - songScrollView.bounds.width)
+        let deltas = [0, artistDelta, albumDelta, songDelta]
+        print ("\(deltas)")
+        autoScrollArtist = artistDelta > 0
+        autoScrollSong = songDelta > 0
+        autoScrollAlbum = albumDelta > 0
     }
     
     @IBAction func skipBackwards(_ sender: Any) {
