@@ -15,6 +15,7 @@
 		B51FA48B22F74044001D9D04 /* StarMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51FA48A22F74044001D9D04 /* StarMeTests.swift */; };
 		B51FA49622F74044001D9D04 /* StarMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51FA49522F74044001D9D04 /* StarMeUITests.swift */; };
 		B51FA4A422F7409A001D9D04 /* CosmosDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51FA4A322F7409A001D9D04 /* CosmosDistrib.swift */; };
+		B57C408823181B46005D61F6 /* todo.txt in Resources */ = {isa = PBXBuildFile; fileRef = B57C408723181B46005D61F6 /* todo.txt */; };
 		B5A37E9222F8CD4200AFAB2F /* CiderUrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37E8E22F8CD4200AFAB2F /* CiderUrlBuilder.swift */; };
 		B5A37E9322F8CD4200AFAB2F /* Include.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37E8F22F8CD4200AFAB2F /* Include.swift */; };
 		B5A37E9422F8CD4200AFAB2F /* UrlFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37E9022F8CD4200AFAB2F /* UrlFetcher.swift */; };
@@ -73,6 +74,7 @@
 		B51FA49522F74044001D9D04 /* StarMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarMeUITests.swift; sourceTree = "<group>"; };
 		B51FA49722F74044001D9D04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B51FA4A322F7409A001D9D04 /* CosmosDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CosmosDistrib.swift; sourceTree = "<group>"; };
+		B57C408723181B46005D61F6 /* todo.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = todo.txt; sourceTree = "<group>"; };
 		B5A37E8E22F8CD4200AFAB2F /* CiderUrlBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CiderUrlBuilder.swift; sourceTree = "<group>"; };
 		B5A37E8F22F8CD4200AFAB2F /* Include.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Include.swift; sourceTree = "<group>"; };
 		B5A37E9022F8CD4200AFAB2F /* UrlFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlFetcher.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		B51FA46922F74043001D9D04 = {
 			isa = PBXGroup;
 			children = (
+				B57C408723181B46005D61F6 /* todo.txt */,
 				B51FA47422F74043001D9D04 /* StarMe */,
 				B51FA48922F74044001D9D04 /* StarMeTests */,
 				B51FA49422F74044001D9D04 /* StarMeUITests */,
@@ -344,6 +347,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B57C408823181B46005D61F6 /* todo.txt in Resources */,
 				B51FA48022F74044001D9D04 /* LaunchScreen.storyboard in Resources */,
 				B51FA47D22F74044001D9D04 /* Assets.xcassets in Resources */,
 				B51FA47B22F74043001D9D04 /* Main.storyboard in Resources */,

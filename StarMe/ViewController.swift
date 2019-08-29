@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     @IBOutlet var prevButton: UIButton!
     @IBOutlet var nextButton: UIButton!
     @IBOutlet var cosmosView: CosmosView!
+    @IBOutlet var volumeView: MPVolumeView!
     
     /*let cider : CiderClient = {
         let developerToken = "MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQgCkPUIy9dIT/L+U1g3Mpc+Mru6VhfyoHUUYuoYyz/i0igCgYIKoZIzj0DAQehRANCAASECa/zp6CPCSKmkoJgBtKHSA8SsDCNjSHQDS38uIbb6QkqlcnxnMH8PUsQaweWsWFW7U/+l0doC4sWbXVUpexj"
@@ -70,7 +71,11 @@ class ViewController: UIViewController {
             nowPlayingItem.setValue(rating, forKey: "rating")
         }
         
-
+        volumeView.backgroundColor = UIColor.clear
+        let myVolumeView = MPVolumeView()
+        myVolumeView.transform = CGAffineTransform(rotationAngle: .pi * 1.5)
+        myVolumeView.frame = CGRect(x: volumeView.frame.width / 2 + 12, y: -10, width: 25, height: volumeView.frame.height + 10)
+        volumeView.addSubview(myVolumeView)
     }
     
     func getAlbumArt(from mediaItem: MPMediaItem) -> UIImage {
