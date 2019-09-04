@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StarMe/ViewController.swift"
-            timestampString = "586998548.181249"
+            timestampString = "589304163.759771"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
-            landmarkName = "updateSongInfo()"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
+            landmarkName = "skipBackwards(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -35,6 +35,14 @@
 	</array>
 	<key>NSAppleMusicUsageDescription</key>
 	<string>Access to your music libray is used to show information about the currently playing track and to set rating information.</string>
+	<key>kTCCServiceMediaLibrary</key>
+	<string>Your &quot;heart&quot; ratings are stored in the apple store.  If you want to see/change the like and dislike hearts, StarMe will need access to your Apple Music account also.  If you choose not to grant access, the application will still work, but only with star ratings.</string>
+	<key>UIStatusBarHidden</key>
+	<false/>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyle.darkContent</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

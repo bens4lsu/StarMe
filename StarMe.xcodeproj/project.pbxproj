@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		088C35E91FC08F7A6D52DFA4 /* Pods_StarMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C006E6CB8708BD435C6DA2C5 /* Pods_StarMeTests.framework */; };
+		49112CFAD7986EDD9BA186F7 /* Pods_StarMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B144A0163138C20A97C068 /* Pods_StarMe.framework */; };
+		B515E6BF231823D000AE6FDB /* JWTClaim.swift in Sources */ = {isa = PBXBuildFile; fileRef = B515E6BE231823D000AE6FDB /* JWTClaim.swift */; };
 		B51FA47622F74043001D9D04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51FA47522F74043001D9D04 /* AppDelegate.swift */; };
 		B51FA47822F74043001D9D04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51FA47722F74043001D9D04 /* ViewController.swift */; };
 		B51FA47B22F74043001D9D04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51FA47922F74043001D9D04 /* Main.storyboard */; };
@@ -16,30 +19,10 @@
 		B51FA49622F74044001D9D04 /* StarMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51FA49522F74044001D9D04 /* StarMeUITests.swift */; };
 		B51FA4A422F7409A001D9D04 /* CosmosDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51FA4A322F7409A001D9D04 /* CosmosDistrib.swift */; };
 		B57C408823181B46005D61F6 /* todo.txt in Resources */ = {isa = PBXBuildFile; fileRef = B57C408723181B46005D61F6 /* todo.txt */; };
-		B5A37E9222F8CD4200AFAB2F /* CiderUrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37E8E22F8CD4200AFAB2F /* CiderUrlBuilder.swift */; };
-		B5A37E9322F8CD4200AFAB2F /* Include.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37E8F22F8CD4200AFAB2F /* Include.swift */; };
-		B5A37E9422F8CD4200AFAB2F /* UrlFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37E9022F8CD4200AFAB2F /* UrlFetcher.swift */; };
-		B5A37E9522F8CD4200AFAB2F /* CiderClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37E9122F8CD4200AFAB2F /* CiderClient.swift */; };
-		B5A37E9C22F8CD5600AFAB2F /* AppleMusicAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37E9722F8CD5600AFAB2F /* AppleMusicAPIError.swift */; };
-		B5A37E9D22F8CD5600AFAB2F /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37E9822F8CD5600AFAB2F /* SearchResults.swift */; };
-		B5A37E9E22F8CD5600AFAB2F /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37E9922F8CD5600AFAB2F /* Resource.swift */; };
-		B5A37E9F22F8CD5600AFAB2F /* Relationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37E9A22F8CD5600AFAB2F /* Relationship.swift */; };
-		B5A37EA022F8CD5600AFAB2F /* ResponseRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37E9B22F8CD5600AFAB2F /* ResponseRoot.swift */; };
-		B5A37EAF22F8CE0300AFAB2F /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37EA222F8CE0300AFAB2F /* Track.swift */; };
-		B5A37EB022F8CE0300AFAB2F /* MusicVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37EA322F8CE0300AFAB2F /* MusicVideo.swift */; };
-		B5A37EB122F8CE0300AFAB2F /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37EA422F8CE0300AFAB2F /* Genre.swift */; };
-		B5A37EB222F8CE0300AFAB2F /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37EA522F8CE0300AFAB2F /* Album.swift */; };
-		B5A37EB322F8CE0300AFAB2F /* PlayParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37EA622F8CE0300AFAB2F /* PlayParameters.swift */; };
-		B5A37EB422F8CE0300AFAB2F /* Storefront.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37EA722F8CE0300AFAB2F /* Storefront.swift */; };
-		B5A37EB522F8CE0300AFAB2F /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37EA822F8CE0300AFAB2F /* MediaType.swift */; };
-		B5A37EB622F8CE0300AFAB2F /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37EA922F8CE0300AFAB2F /* Artist.swift */; };
-		B5A37EB722F8CE0300AFAB2F /* ContentRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37EAA22F8CE0300AFAB2F /* ContentRating.swift */; };
-		B5A37EB822F8CE0300AFAB2F /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37EAB22F8CE0300AFAB2F /* Playlist.swift */; };
-		B5A37EB922F8CE0300AFAB2F /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37EAC22F8CE0300AFAB2F /* Artwork.swift */; };
-		B5A37EBA22F8CE0300AFAB2F /* EditorialNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37EAD22F8CE0300AFAB2F /* EditorialNotes.swift */; };
-		B5A37EBB22F8CE0300AFAB2F /* Curator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A37EAE22F8CE0300AFAB2F /* Curator.swift */; };
 		B5D008F322F883C90023D3D9 /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D008F222F883C90023D3D9 /* TimeInterval.swift */; };
 		B5D008F822F895D70023D3D9 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D008F722F895D70023D3D9 /* UIImage.swift */; };
+		B5D0174523196DF200156A67 /* AuthKey_84MV92D26B.p8 in Resources */ = {isa = PBXBuildFile; fileRef = B5D0174423196DF100156A67 /* AuthKey_84MV92D26B.p8 */; };
+		FF7AD767D7EC64A2E13786CD /* Pods_StarMeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C4163DC44490813D885CC3A /* Pods_StarMeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14B144A0163138C20A97C068 /* Pods_StarMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C4163DC44490813D885CC3A /* Pods_StarMeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarMeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FEE14C2C64747A6EF301EA1 /* Pods-StarMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarMe.release.xcconfig"; path = "Target Support Files/Pods-StarMe/Pods-StarMe.release.xcconfig"; sourceTree = "<group>"; };
+		770E7EDDAEBD3A0702BE37E3 /* Pods-StarMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarMeTests.debug.xcconfig"; path = "Target Support Files/Pods-StarMeTests/Pods-StarMeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		94237A6C57FC554E8F8FDC6C /* Pods-StarMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarMeTests.release.xcconfig"; path = "Target Support Files/Pods-StarMeTests/Pods-StarMeTests.release.xcconfig"; sourceTree = "<group>"; };
+		B515E6BE231823D000AE6FDB /* JWTClaim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTClaim.swift; sourceTree = "<group>"; };
 		B51FA47222F74043001D9D04 /* StarMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B51FA47522F74043001D9D04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B51FA47722F74043001D9D04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,30 +64,13 @@
 		B51FA49722F74044001D9D04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B51FA4A322F7409A001D9D04 /* CosmosDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CosmosDistrib.swift; sourceTree = "<group>"; };
 		B57C408723181B46005D61F6 /* todo.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = todo.txt; sourceTree = "<group>"; };
-		B5A37E8E22F8CD4200AFAB2F /* CiderUrlBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CiderUrlBuilder.swift; sourceTree = "<group>"; };
-		B5A37E8F22F8CD4200AFAB2F /* Include.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Include.swift; sourceTree = "<group>"; };
-		B5A37E9022F8CD4200AFAB2F /* UrlFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlFetcher.swift; sourceTree = "<group>"; };
-		B5A37E9122F8CD4200AFAB2F /* CiderClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CiderClient.swift; sourceTree = "<group>"; };
-		B5A37E9722F8CD5600AFAB2F /* AppleMusicAPIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleMusicAPIError.swift; sourceTree = "<group>"; };
-		B5A37E9822F8CD5600AFAB2F /* SearchResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
-		B5A37E9922F8CD5600AFAB2F /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
-		B5A37E9A22F8CD5600AFAB2F /* Relationship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Relationship.swift; sourceTree = "<group>"; };
-		B5A37E9B22F8CD5600AFAB2F /* ResponseRoot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseRoot.swift; sourceTree = "<group>"; };
-		B5A37EA222F8CE0300AFAB2F /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
-		B5A37EA322F8CE0300AFAB2F /* MusicVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideo.swift; sourceTree = "<group>"; };
-		B5A37EA422F8CE0300AFAB2F /* Genre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
-		B5A37EA522F8CE0300AFAB2F /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
-		B5A37EA622F8CE0300AFAB2F /* PlayParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayParameters.swift; sourceTree = "<group>"; };
-		B5A37EA722F8CE0300AFAB2F /* Storefront.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storefront.swift; sourceTree = "<group>"; };
-		B5A37EA822F8CE0300AFAB2F /* MediaType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
-		B5A37EA922F8CE0300AFAB2F /* Artist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
-		B5A37EAA22F8CE0300AFAB2F /* ContentRating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentRating.swift; sourceTree = "<group>"; };
-		B5A37EAB22F8CE0300AFAB2F /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
-		B5A37EAC22F8CE0300AFAB2F /* Artwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
-		B5A37EAD22F8CE0300AFAB2F /* EditorialNotes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorialNotes.swift; sourceTree = "<group>"; };
-		B5A37EAE22F8CE0300AFAB2F /* Curator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curator.swift; sourceTree = "<group>"; };
 		B5D008F222F883C90023D3D9 /* TimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
 		B5D008F722F895D70023D3D9 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		B5D0174423196DF100156A67 /* AuthKey_84MV92D26B.p8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AuthKey_84MV92D26B.p8; sourceTree = SOURCE_ROOT; };
+		C006E6CB8708BD435C6DA2C5 /* Pods_StarMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4A46DF24E43B0A6149D76C1 /* Pods-StarMeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarMeUITests.release.xcconfig"; path = "Target Support Files/Pods-StarMeUITests/Pods-StarMeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E6A84334FD33CD2D7C28DE6F /* Pods-StarMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarMe.debug.xcconfig"; path = "Target Support Files/Pods-StarMe/Pods-StarMe.debug.xcconfig"; sourceTree = "<group>"; };
+		F22F87D9F80A76A38BBE2119 /* Pods-StarMeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarMeUITests.debug.xcconfig"; path = "Target Support Files/Pods-StarMeUITests/Pods-StarMeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49112CFAD7986EDD9BA186F7 /* Pods_StarMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				088C35E91FC08F7A6D52DFA4 /* Pods_StarMeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,12 +94,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF7AD767D7EC64A2E13786CD /* Pods_StarMeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D2BC8041CE84D61327F43DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6A84334FD33CD2D7C28DE6F /* Pods-StarMe.debug.xcconfig */,
+				2FEE14C2C64747A6EF301EA1 /* Pods-StarMe.release.xcconfig */,
+				770E7EDDAEBD3A0702BE37E3 /* Pods-StarMeTests.debug.xcconfig */,
+				94237A6C57FC554E8F8FDC6C /* Pods-StarMeTests.release.xcconfig */,
+				F22F87D9F80A76A38BBE2119 /* Pods-StarMeUITests.debug.xcconfig */,
+				E4A46DF24E43B0A6149D76C1 /* Pods-StarMeUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B51FA46922F74043001D9D04 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +122,8 @@
 				B51FA48922F74044001D9D04 /* StarMeTests */,
 				B51FA49422F74044001D9D04 /* StarMeUITests */,
 				B51FA47322F74043001D9D04 /* Products */,
+				4D2BC8041CE84D61327F43DD /* Pods */,
+				BFDCA7C57BECD36134B2302D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,13 +140,14 @@
 		B51FA47422F74043001D9D04 /* StarMe */ = {
 			isa = PBXGroup;
 			children = (
-				B5A37E8422F8CD0B00AFAB2F /* Cider */,
+				B5D0174423196DF100156A67 /* AuthKey_84MV92D26B.p8 */,
+				B573FED123181EA500182882 /* CosmosStars */,
 				B5D008F622F88EFF0023D3D9 /* Extensions */,
 				B51FA47522F74043001D9D04 /* AppDelegate.swift */,
 				B51FA47722F74043001D9D04 /* ViewController.swift */,
+				B515E6BE231823D000AE6FDB /* JWTClaim.swift */,
 				B51FA47922F74043001D9D04 /* Main.storyboard */,
 				B51FA47C22F74044001D9D04 /* Assets.xcassets */,
-				B51FA4A322F7409A001D9D04 /* CosmosDistrib.swift */,
 				B51FA47E22F74044001D9D04 /* LaunchScreen.storyboard */,
 				B51FA48122F74044001D9D04 /* Info.plist */,
 			);
@@ -181,57 +172,12 @@
 			path = StarMeUITests;
 			sourceTree = "<group>";
 		};
-		B5A37E8422F8CD0B00AFAB2F /* Cider */ = {
+		B573FED123181EA500182882 /* CosmosStars */ = {
 			isa = PBXGroup;
 			children = (
-				B5A37EA122F8CE0300AFAB2F /* ResourceObjects */,
-				B5A37E9622F8CD5600AFAB2F /* CoreObjects */,
-				B5A37E8D22F8CD4200AFAB2F /* Client */,
+				B51FA4A322F7409A001D9D04 /* CosmosDistrib.swift */,
 			);
-			path = Cider;
-			sourceTree = "<group>";
-		};
-		B5A37E8D22F8CD4200AFAB2F /* Client */ = {
-			isa = PBXGroup;
-			children = (
-				B5A37E8E22F8CD4200AFAB2F /* CiderUrlBuilder.swift */,
-				B5A37E8F22F8CD4200AFAB2F /* Include.swift */,
-				B5A37E9022F8CD4200AFAB2F /* UrlFetcher.swift */,
-				B5A37E9122F8CD4200AFAB2F /* CiderClient.swift */,
-			);
-			path = Client;
-			sourceTree = "<group>";
-		};
-		B5A37E9622F8CD5600AFAB2F /* CoreObjects */ = {
-			isa = PBXGroup;
-			children = (
-				B5A37E9722F8CD5600AFAB2F /* AppleMusicAPIError.swift */,
-				B5A37E9822F8CD5600AFAB2F /* SearchResults.swift */,
-				B5A37E9922F8CD5600AFAB2F /* Resource.swift */,
-				B5A37E9A22F8CD5600AFAB2F /* Relationship.swift */,
-				B5A37E9B22F8CD5600AFAB2F /* ResponseRoot.swift */,
-			);
-			path = CoreObjects;
-			sourceTree = "<group>";
-		};
-		B5A37EA122F8CE0300AFAB2F /* ResourceObjects */ = {
-			isa = PBXGroup;
-			children = (
-				B5A37EA222F8CE0300AFAB2F /* Track.swift */,
-				B5A37EA322F8CE0300AFAB2F /* MusicVideo.swift */,
-				B5A37EA422F8CE0300AFAB2F /* Genre.swift */,
-				B5A37EA522F8CE0300AFAB2F /* Album.swift */,
-				B5A37EA622F8CE0300AFAB2F /* PlayParameters.swift */,
-				B5A37EA722F8CE0300AFAB2F /* Storefront.swift */,
-				B5A37EA822F8CE0300AFAB2F /* MediaType.swift */,
-				B5A37EA922F8CE0300AFAB2F /* Artist.swift */,
-				B5A37EAA22F8CE0300AFAB2F /* ContentRating.swift */,
-				B5A37EAB22F8CE0300AFAB2F /* Playlist.swift */,
-				B5A37EAC22F8CE0300AFAB2F /* Artwork.swift */,
-				B5A37EAD22F8CE0300AFAB2F /* EditorialNotes.swift */,
-				B5A37EAE22F8CE0300AFAB2F /* Curator.swift */,
-			);
-			path = ResourceObjects;
+			path = CosmosStars;
 			sourceTree = "<group>";
 		};
 		B5D008F622F88EFF0023D3D9 /* Extensions */ = {
@@ -243,6 +189,16 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		BFDCA7C57BECD36134B2302D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14B144A0163138C20A97C068 /* Pods_StarMe.framework */,
+				C006E6CB8708BD435C6DA2C5 /* Pods_StarMeTests.framework */,
+				1C4163DC44490813D885CC3A /* Pods_StarMeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -250,9 +206,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B51FA49A22F74044001D9D04 /* Build configuration list for PBXNativeTarget "StarMe" */;
 			buildPhases = (
+				267CC7C981B8E6BDC5FCB1EF /* [CP] Check Pods Manifest.lock */,
 				B51FA46E22F74043001D9D04 /* Sources */,
 				B51FA46F22F74043001D9D04 /* Frameworks */,
 				B51FA47022F74043001D9D04 /* Resources */,
+				106E6B09326AE790D3033284 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -267,6 +225,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B51FA49D22F74044001D9D04 /* Build configuration list for PBXNativeTarget "StarMeTests" */;
 			buildPhases = (
+				08B448E82DBB5825F1AFCDFF /* [CP] Check Pods Manifest.lock */,
 				B51FA48222F74044001D9D04 /* Sources */,
 				B51FA48322F74044001D9D04 /* Frameworks */,
 				B51FA48422F74044001D9D04 /* Resources */,
@@ -285,6 +244,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B51FA4A022F74044001D9D04 /* Build configuration list for PBXNativeTarget "StarMeUITests" */;
 			buildPhases = (
+				4D5CE03CD3AA76A6BB06BA36 /* [CP] Check Pods Manifest.lock */,
 				B51FA48D22F74044001D9D04 /* Sources */,
 				B51FA48E22F74044001D9D04 /* Frameworks */,
 				B51FA48F22F74044001D9D04 /* Resources */,
@@ -351,6 +311,7 @@
 				B51FA48022F74044001D9D04 /* LaunchScreen.storyboard in Resources */,
 				B51FA47D22F74044001D9D04 /* Assets.xcassets in Resources */,
 				B51FA47B22F74043001D9D04 /* Main.storyboard in Resources */,
+				B5D0174523196DF200156A67 /* AuthKey_84MV92D26B.p8 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,38 +331,103 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08B448E82DBB5825F1AFCDFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StarMeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		106E6B09326AE790D3033284 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StarMe/Pods-StarMe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StarMe/Pods-StarMe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StarMe/Pods-StarMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		267CC7C981B8E6BDC5FCB1EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StarMe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D5CE03CD3AA76A6BB06BA36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StarMeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B51FA46E22F74043001D9D04 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5A37E9D22F8CD5600AFAB2F /* SearchResults.swift in Sources */,
 				B51FA47822F74043001D9D04 /* ViewController.swift in Sources */,
-				B5A37E9422F8CD4200AFAB2F /* UrlFetcher.swift in Sources */,
-				B5A37EB322F8CE0300AFAB2F /* PlayParameters.swift in Sources */,
-				B5A37EB022F8CE0300AFAB2F /* MusicVideo.swift in Sources */,
-				B5A37E9C22F8CD5600AFAB2F /* AppleMusicAPIError.swift in Sources */,
-				B5A37EB522F8CE0300AFAB2F /* MediaType.swift in Sources */,
-				B5A37EB222F8CE0300AFAB2F /* Album.swift in Sources */,
-				B5A37EA022F8CD5600AFAB2F /* ResponseRoot.swift in Sources */,
 				B5D008F322F883C90023D3D9 /* TimeInterval.swift in Sources */,
-				B5A37EB622F8CE0300AFAB2F /* Artist.swift in Sources */,
-				B5A37EB822F8CE0300AFAB2F /* Playlist.swift in Sources */,
 				B5D008F822F895D70023D3D9 /* UIImage.swift in Sources */,
+				B515E6BF231823D000AE6FDB /* JWTClaim.swift in Sources */,
 				B51FA47622F74043001D9D04 /* AppDelegate.swift in Sources */,
 				B51FA4A422F7409A001D9D04 /* CosmosDistrib.swift in Sources */,
-				B5A37EB922F8CE0300AFAB2F /* Artwork.swift in Sources */,
-				B5A37EB122F8CE0300AFAB2F /* Genre.swift in Sources */,
-				B5A37EBA22F8CE0300AFAB2F /* EditorialNotes.swift in Sources */,
-				B5A37EB722F8CE0300AFAB2F /* ContentRating.swift in Sources */,
-				B5A37EBB22F8CE0300AFAB2F /* Curator.swift in Sources */,
-				B5A37E9222F8CD4200AFAB2F /* CiderUrlBuilder.swift in Sources */,
-				B5A37E9F22F8CD5600AFAB2F /* Relationship.swift in Sources */,
-				B5A37EAF22F8CE0300AFAB2F /* Track.swift in Sources */,
-				B5A37E9E22F8CD5600AFAB2F /* Resource.swift in Sources */,
-				B5A37EB422F8CE0300AFAB2F /* Storefront.swift in Sources */,
-				B5A37E9322F8CD4200AFAB2F /* Include.swift in Sources */,
-				B5A37E9522F8CD4200AFAB2F /* CiderClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,6 +600,7 @@
 		};
 		B51FA49B22F74044001D9D04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6A84334FD33CD2D7C28DE6F /* Pods-StarMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -592,6 +619,7 @@
 		};
 		B51FA49C22F74044001D9D04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FEE14C2C64747A6EF301EA1 /* Pods-StarMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -610,6 +638,7 @@
 		};
 		B51FA49E22F74044001D9D04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 770E7EDDAEBD3A0702BE37E3 /* Pods-StarMeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -631,6 +660,7 @@
 		};
 		B51FA49F22F74044001D9D04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94237A6C57FC554E8F8FDC6C /* Pods-StarMeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -652,6 +682,7 @@
 		};
 		B51FA4A122F74044001D9D04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F22F87D9F80A76A38BBE2119 /* Pods-StarMeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -672,6 +703,7 @@
 		};
 		B51FA4A222F74044001D9D04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4A46DF24E43B0A6149D76C1 /* Pods-StarMeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

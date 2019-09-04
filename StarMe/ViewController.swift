@@ -9,6 +9,8 @@
 import UIKit
 import MediaPlayer
 import StoreKit
+import SwiftJWT
+
 
 class ViewController: UIViewController {
 
@@ -24,11 +26,6 @@ class ViewController: UIViewController {
     @IBOutlet var nextButton: UIButton!
     @IBOutlet var cosmosView: CosmosView!
     @IBOutlet var volumeView: MPVolumeView!
-    
-    /*let cider : CiderClient = {
-        let developerToken = "MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQgCkPUIy9dIT/L+U1g3Mpc+Mru6VhfyoHUUYuoYyz/i0igCgYIKoZIzj0DAQehRANCAASECa/zp6CPCSKmkoJgBtKHSA8SsDCNjSHQDS38uIbb6QkqlcnxnMH8PUsQaweWsWFW7U/+l0doC4sWbXVUpexj"
-        return CiderClient(storefront: .unitedStates, developerToken: developerToken)
-    }()*/
     
     let player = MPMusicPlayerController.systemMusicPlayer
     let playImage = UIImage(named: "icons8-play-100")?.resize(toWidth: 35)
@@ -76,6 +73,63 @@ class ViewController: UIViewController {
         myVolumeView.transform = CGAffineTransform(rotationAngle: .pi * 1.5)
         myVolumeView.frame = CGRect(x: volumeView.frame.width / 2 + 12, y: -10, width: 25, height: volumeView.frame.height + 10)
         volumeView.addSubview(myVolumeView)
+        
+        /*
+        do {
+            
+            /*
+             
+             {
+             "alg": "ES256",
+             "kid": "ABC123DEFG"
+             }
+             {
+             "iss": "DEF123GHIJ",
+             "iat": 1437179036,
+             "exp": 1493298100
+             }
+             
+             */
+            
+            
+            
+            guard let privateKeyPath = Bundle.main.path(forResource: AppleMusicAuthorization.privateKeyFileName, ofType: AppleMusicAuthorization.privateKeyFileExt) else {
+                print ("Error:  could not find private key file in Application Bundle." )
+                return
+            }
+            let privateKeyURL = URL(fileURLWithPath: privateKeyPath)
+            let privateKey: Data = try Data(contentsOf: privateKeyURL, options: .alwaysMapped)
+            var myJWT = JWT (header: Header(kid: AppleMusicAuthorization.keyID),
+                             claims: JWTClaim(iss: AppleMusicAuthorization.issuer,
+                                              iat: "\(Int(Date().timeIntervalSince1970))",
+                                              exp: "\(Int(Date().timeIntervalSince1970 + AppleMusicAuthorization.tokenExpirationSeconds))" ) )
+ 
+            let jwtSigner = JWTSigner.es256(privateKey: privateKey)
+            let jwtToken = try myJWT.sign(using: jwtSigner)
+            print ("\(jwtToken)")
+            
+            let cloudServiceController = SKCloudServiceController()
+            
+            cloudServiceController.requestUserToken(forDeveloperToken: jwtToken) {
+                userToken, error in
+                if let userToken = userToken {
+                    print ("User Token:  \(String(describing: userToken))")
+                }
+                if let error = error {
+                    print ("error:  \(String(describing: error))")
+                }
+            }
+        }
+        
+        catch let error {
+            print ("\(error.localizedDescription)")
+        }
+         */
+
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return false
     }
     
     func getAlbumArt(from mediaItem: MPMediaItem) -> UIImage {
@@ -127,10 +181,6 @@ class ViewController: UIViewController {
         artist.sizeToFit()
         album.sizeToFit()
         song.sizeToFit()
-        
-        //cider.search(term: "Michael Jackson", types: [.albums, .songs]) { results, error in
-        //    print("&&&&&&& \(String(describing: results))  \(String(describing: error))")
-        //}
         
         guard let artistScrollView = artist.superview as? UIScrollView,
             let albumScrollView = album.superview as? UIScrollView,
